@@ -1,3 +1,8 @@
 .LeafletMap {
   display: block;
+
+  #map-container {
+    width: 700px;
+    height: 500px;
+  }
 }
