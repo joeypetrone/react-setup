@@ -3,6 +3,8 @@ import {
   Map, TileLayer, Marker, Popup,
 } from 'react-leaflet';
 
+import './LeafletMap.scss';
+
 class LeafletMap extends React.Component {
   state = {
     lat: 36.159839,
@@ -12,13 +14,13 @@ class LeafletMap extends React.Component {
 
   render() {
     return (
-      <div className="LeafletMap">
+      <div className="LeafletMap m-3 text-center">
+        <h1 className="mb-4">Leaflet Map</h1>
           {
           this.props.foundPin
             ? <Map
                  center={[this.state.lat, this.state.lng]}
                  zoom={this.state.zoom}
-                 style={{ width: '100%', height: '900px' }}
               >
               <TileLayer
                 attribution='&copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
