@@ -1,0 +1,62 @@
+{
+  "pin01" : {
+    "propertyId": "property01",
+    "name": "Charlotte Ave & 6th Ave N",
+    "lat": 36.165606,
+    "lng": -86.782713      
+  },
+  "pin02" : {
+    "propertyId": "property01",
+    "name": "U.S. Hwy 31 & Capital Towers",
+    "lat": 36.168388,
+    "lng": -86.785020      
+  },
+  "pin03" : {
+    "propertyId": "property02",
+    "name": "Commerce St & 3rd Ave N",
+    "lat": 36.162866,
+    "lng": -86.776879      
+  },
+  "pin04" : {
+    "propertyId": "property02",
+    "name": "Commerce St & 4th Ave N",
+    "lat": 36.162374,
+    "lng": -86.778044      
+  },
+  "pin05" : {
+    "propertyId": "property03",
+    "name": "Plus Park Blvd & Pias Credit Union",
+    "lat": 36.128850,
+    "lng": -86.725754      
+  },
+  "pin06" : {
+    "propertyId": "property03",
+    "name": "Plus Park Blvd & Academy of Make Up Arts",
+    "lat": 36.126911,
+    "lng": -86.725145      
+  },
+  "pin07" : {
+    "propertyId": "property04",
+    "name": "U.S. Hwy 31 & Eighth Avenue Antique Mall",
+    "lat": 36.133225,
+    "lng": -86.779318      
+  },
+  "pin08" : {
+    "propertyId": "property04",
+    "name": "U.S. Hwy 31 & Tiger Market",
+    "lat": 36.133728,
+    "lng": -86.779273      
+  },
+  "pin09" : {
+    "propertyId": "property05",
+    "name": "Charlotte Ave & EurWerks",
+    "lat": 36.152243,
+    "lng": -86.837736      
+  },
+  "pin10" : {
+    "propertyId": "property05",
+    "name": "43rd Ave N & Alley",
+    "lat": 36.151807,
+    "lng": -86.838261      
+  }
+}

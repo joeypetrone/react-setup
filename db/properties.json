@@ -1,0 +1,27 @@
+  {
+    "property01" : {
+      "name": "Tennessee State Capitol",
+      "lat": 36.165763,
+      "lng": -86.784209      
+    },
+    "property02" : {
+      "name": "Batman Building",
+      "lat": 36.162385,
+      "lng": -86.776972      
+    },
+    "property03" : {
+      "name": "Nashville Software School",
+      "lat": 36.127837,
+      "lng": -86.726002      
+    },
+    "property04" : {
+      "name": "Burger King",
+      "lat": 36.133399,
+      "lng": -86.779559      
+    },
+    "property05" : {
+      "name": "MAPCO",
+      "lat": 36.152165,
+      "lng": -86.837987   
+    }
+  }

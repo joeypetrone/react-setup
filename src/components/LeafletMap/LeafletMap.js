@@ -7,8 +7,8 @@ import './LeafletMap.scss';
 
 class LeafletMap extends React.Component {
   state = {
-    lat: 36.159839,
-    lng: -86.777971,
+    lat: 36.133813,
+    lng: -86.780607,
     zoom: 20,
   };
 
