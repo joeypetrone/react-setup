@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   Map, TileLayer, Marker, Popup,
 } from 'react-leaflet';
@@ -6,27 +7,32 @@ import {
 import './LeafletMap.scss';
 
 class LeafletMap extends React.Component {
+  static propTypes = {
+    lat: PropTypes.number.isRequired,
+    lng: PropTypes.number.isRequired,
+  }
+
   state = {
-    lat: 36.133813,
-    lng: -86.780607,
     zoom: 20,
   };
 
   render() {
+    const { lat, lng } = this.props;
+
     return (
       <div className="LeafletMap m-3 text-center">
         <h1 className="mb-4">Leaflet Map</h1>
           {
-          this.props.foundPin
+          this.props.lat
             ? <Map
-                 center={[this.state.lat, this.state.lng]}
+                 center={[lat, lng]}
                  zoom={this.state.zoom}
               >
               <TileLayer
                 attribution='&copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                />
-              <Marker position={this.props.foundPin}>
+              <Marker position={[lat, lng]}>
                 <Popup>
                   <span>ADDRESS: Loading...</span>
                   <br/>

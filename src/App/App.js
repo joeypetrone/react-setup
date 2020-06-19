@@ -1,24 +1,27 @@
-/* eslint-disable comma-dangle */
-/* eslint-disable no-undef */
-/* eslint-disable quotes */
-/* eslint-disable quote-props */
 import React from 'react';
-import LeafletMap from '../components/LeafletMap/LeafletMap';
+
+import Home from '../components/pages/Home/Home';
+
+import LeafletMap from '../components/shared/LeafletMap/LeafletMap';
+
 
 class App extends React.Component {
   state = {
-    foundPin: [],
+    zoom: 20,
   }
 
   componentDidMount() {
-    const foundPin = [36.159839, -86.777971];
-
-    this.setState({ foundPin });
+    this.setState({ lat: 36.159839, lng: -86.778971 });
   }
 
   render() {
+    const { lat, lng } = this.state;
+
     return (
-      <LeafletMap foundPin={this.state.foundPin}/>
+      <div className="App">
+        <LeafletMap lat={lat} lng={lng}/>
+        <Home />
+     </div>
     );
   }
 }
