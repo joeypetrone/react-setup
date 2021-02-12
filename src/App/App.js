@@ -4,6 +4,7 @@ import Home from '../components/pages/Home/Home';
 
 import LeafletMap from '../components/shared/LeafletMap/LeafletMap';
 
+import Calculator from '../components/shared/Calculator/Calculator';
 
 class App extends React.Component {
   state = {
@@ -21,6 +22,7 @@ class App extends React.Component {
       <div className="App">
         <LeafletMap lat={lat} lng={lng}/>
         <Home />
+        <Calculator />
      </div>
     );
   }
